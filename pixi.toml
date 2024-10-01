@@ -7,5 +7,19 @@ platforms = ["osx-64"]
 version = "0.1.0"
 
 [tasks]
+nb = { cmd = ["jupyter", "lab", "--no-browser", "--ip", "0.0.0.0", "--port", "8888"] }
 
 [dependencies]
+python = ">=3.12.6,<4"
+jupyterlab = ">=4.2.5,<5"
+jupyter-book = ">=1.0.2,<2"
+jupyterlab-spellchecker = ">=0.8.4,<0.9"
+pyclesperanto-prototype = ">=0.24.4, <0.25"
+dask = ">=2024.9.1,<2025"
+numpy = ">=2.1.1,<3"
+scikit-image = ">=0.24.0,<0.25"
+numcodecs = ">=0.13.0,<0.14"
+zarr = ">=2.18.3,<3"
+ocl_icd_wrapper_apple = ">=1.0.0,<2"
+stackview = ">=0.11.0,<0.12"
+python-lsp-server = ">=1.12.0,<2"
